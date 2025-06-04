@@ -1,86 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <title>About Us - Typing Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url('https://images.unsplash.com/photo-1557682250-33bd709cbe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 10px;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        h1 {
-            text-align: center;
-        }
-        table {
-            width: 50%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        button{
-            margin-top: 10px;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        a {
-            text-decoration: none;
-            color: black;
-        }
-    </style>
+    nav {
+      background-color: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(8px);
+      padding: 1em 2em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
 
+    nav .logo {
+      font-size: 1.8em;
+      font-weight: 800;
+      color: #ffffff;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5em;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00d9ff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2em;
+      margin-top: 3em;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+      font-size: 2em;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.8em;
+      text-align: justify;
+      margin-bottom: 1.5em;
+    }
+
+    .creator {
+      margin-top: 3em;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 1.5em;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .creator h3 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      color: #00d9ff;
+    }
+
+    .creator p {
+      text-align: center;
+      font-size: 1.05em;
+    }
+
+    footer {
+      background-color: rgba(255, 255, 255, 0.05);
+      color: #ccc;
+      text-align: center;
+      padding: 1em;
+      margin-top: auto;
+      font-size: 0.95em;
+    }
+  </style>
 </head>
-
-
-
 <body>
-    <h1>Test Results</h1>
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>User</th>
-            <th>Difficulty</th>
-            <th>Word per sec</th>
-            <th>Result</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Ngim</td>
-            <td>Easy</td>
-            <td>40</td>
-            <td>Pass</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Dararith</td>
-            <td>Medium</td>
-            <td>50</td>
-            <td>Pass</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Chinghoir</td>
-            <td>Hard</td>
-            <td>30</td>
-            <td>Fail</td>
-        </tr>
-    </table>
 
-    <button><a href="index.html">Back to Home</a></button>
+  <nav>
+    <div class="logo">TypingTest</div>
+    <div>
+      <a href="landing.html">Home</a>
+      <a href="typing.html">Test</a>
+      <a href="results.html">Results</a>
+      <a href="about.html">About</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2>About This Website</h2>
+    <p>
+      Welcome to <strong>TypingTest</strong> — your interactive platform for practicing and improving your typing skills. Whether you're a student, a professional, or just someone who loves to type, this tool helps you boost your speed and accuracy through real-time feedback.
+    </p>
+    <p>
+      Built using clean HTML, CSS, and JavaScript, TypingTest is lightweight and responsive across devices. The test features a timer, real-time word count, WPM (words per minute), and accuracy tracking to help you monitor your progress.
+    </p>
+    <p>
+      Typing is more than just speed — it's about precision, rhythm, and muscle memory. With this platform, you can practice smarter and more efficiently.
+    </p>
+
+    <div class="creator">
+      <h3>Meet the Creator</h3>
+      <p>
+        Hello! I'm <strong>Oulong</strong>, a Computer Science student passionate about web development and creating tools that help people learn and grow.
+        <br><br>
+        This project was built as part of my learning journey to practice full-stack concepts and UI design. I hope you find it helpful, easy to use, and maybe even a little fun.
+        <br><br>
+        Thank you for visiting!
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 TypingTest by Oulong. All rights reserved.
+  </footer>
 
 </body>
 </html>
